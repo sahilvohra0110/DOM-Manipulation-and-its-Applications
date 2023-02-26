@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StreetEat Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Food Company</h1>
+      <div>
+        <input type="text" id="search-input" placeholder="Search...">
+        <a href="#" onclick="document.getElementById('login-modal').style.display='block'">Login</a>
+        <a href="#" onclick="document.getElementById('signup-modal').style.display='block'">Sign Up</a>
+      </div>
+    </div>
+    <div class="subheader">
+      <a href="dineout.html">Dine Out</a>
+      <a href="dinein.html">Dine In</a>
+    </div>
+    <div class="food-container" id="food-container">
+      <div class="food-card">
+        <img src="food1.webp" style="width: 200px;">
+        <h2>Pizza</h2>
+        <p>Category: Italian</p>
+      </div>
+      <div class="food-card">
+        <img src="food2.jpg" style="width: 200px;">
+        <h2>Burger</h2>
+        <p>Category: American</p>
+      </div>
+      <div class="food-card">
+        <img src="food3.webp" style="width: 200px;">
+        <h2>Taco</h2>
+        <p>Category: Mexican</p>
+      </div>
+      <div class="food-card">
+        <img src="food4.jpg" style="width: 200px;">
+        <h2>Sushi</h2>
+        <p>Category: Japanese</p>
+      </div>
+      <div class="food-card">
+        <img src="food5.jpg" style="width: 200px;">
+        <h2>Curry</h2>
+        <p>Category: Indian</p>
+      </div>
+    </div>
+    
+
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="document.getElementById('login-modal').style.display='none'">&times;</span>
+        <form class="modal-form">
+          <h2>Login</h2>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+          <button type="submit">Login</button>
+          <div class="container">
+            <button type="button" class="cancelbtn" onclick="document.getElementById('login-modal').style.display='none'">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+   
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="document.getElementById('signup-modal').style.display='none'">&times;</span>
+        <form class="modal-form">
+          <h2>Sign Up</h2>
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="name" required>
+          <label for="email"><b>Email
