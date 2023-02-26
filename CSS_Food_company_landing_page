@@ -1,0 +1,150 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
+  }
+  
+  .header a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .header a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+
+  .subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #ddd;
+  }
+  
+  .subheader a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 10px;
+  }
+  
+  .subheader a:last-child {
+    margin-right: 0;
+  }
+  
+  .subheader a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .food-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .food-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .food-card h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .food-card p {
+    margin: 0;
+    color: #666;
+  }
+  
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .modal-form label {
+    margin-bottom: 5px;
+  }
+  
+  .modal-form input[type="text"],
+  .modal-form input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .modal-form button {
+    background-color: black;
+    color: white;
+    border: none;
+  }
